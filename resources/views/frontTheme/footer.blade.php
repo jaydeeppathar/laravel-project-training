@@ -1,45 +1,39 @@
-<footer class="footer-w3ls text-center py-5">
-        <div class="container pt-4">
-            <div class="mx-auto" style="max-width:600px;">
-                <a href="index.html" class="footer-logo py-1">
-                    <i class="fas fa-bold"></i>.
-                </a>
-                <p class="mt-4 text-white">Itaque earum rerum hic tenetur asaItaque
-                    earum rerum hic tenetur asap iente delectus ac elit in
-                    coeiciendis maiores.</p>
-                <div class="social-icons-main mt-4 pb-3">
-                    <ul class="social-icons3">
-                        <li>
-                            <a href="#facebook">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#twitter">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#linkedinin">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#dribbble">
-                                <i class="fab fa-dribbble"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://instagram.com/mr.jaydeep_pathar?igshid=YmMyMTA2M2Y=">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="footer">
+            <div class="col-md-3 foot-1">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">||   Lorem Ipsum passage</a></li>
+                    <li><a href="#">||   Finibus Bonorum et</a></li>
+                    <li><a href="#">||   Treatise on the theory</a></li>
+                </ul>
             </div>
-            <!-- copyright -->
-            <p class="copy-right-w3 text-white mt-5 pt-4">© 2021 Biodata. All rights reserved | Design by
-                <a href="http://w3layouts.com" target="_blank"> W3layouts.</a>
-            </p>
+            <div class="col-md-3 foot-1">
+                <h4>Favorite Resources</h4>
+                <ul>
+                    <li><a href="#">||   Characteristic words</a></li>
+                    <li><a href="#">||   combined with a handful</a></li>
+                    <li><a href="#">||   which looks reasonable</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 foot-1">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">||  Even slightly believable</a></li>
+                    <li><a href="#">||  Hidden in the middle</a></li>
+                    <li><a href="#">||  Ipsum therefore always</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 foot-1">
+                <h4>Custom Menu</h4>
+                <ul>
+                    <li><a href="#">||  Internet tend to repeat</a></li>
+                    <li><a href="#">||  Alteration in some form</a></li>
+                    <li><a href="#">||  This book is a treatise</a></li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"> </div>
+            <div class="copyright">
+                <p>Copyrights © 2015 Voguish All rights reserved | Template by <a href="http://w3layouts.com/">W3layouts</a></p>
+            </div>
         </div>
-    </footer>

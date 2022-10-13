@@ -81,19 +81,19 @@
                     </a>
                 </li>
                 <li class="nav-item menu-open">
-                    <a href="{{ route('product_category.index') }}" class="nav-link {{ (request()->is('product_category*')) ? 'active' : '' }}">
+                    <a href="{{ route('category.index') }}" class="nav-link {{ (request()->is('category*')) ? 'active' : '' }}">
                         <i class="fa fa-users nav-icon"></i>
                         <p>
-                            ProductCategory
+                            Category
                            {{-- <i class="right fas fa-angle-left"></i> --}}
                         </p>
                     </a>
                 </li>
                 <li class="nav-item menu-open">
-                    <a href="{{ route('product_item.index') }}" class="nav-link {{ (request()->is('product_item*')) ? 'active' : '' }}">
+                    <a href="{{ route('blog.index') }}" class="nav-link {{ (request()->is('blog*')) ? 'active' : '' }}">
                         <i class="fa fa-users nav-icon"></i>
                         <p>
-                            Product
+                            Blog
                            {{-- <i class="right fas fa-angle-left"></i> --}}
                         </p>
                     </a>

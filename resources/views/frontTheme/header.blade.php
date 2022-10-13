@@ -1,54 +1,34 @@
-<header id="site-header" class="fixed-top">
+ <div class="header">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="index.html">
-                    <i class="fas fa-bold"></i>.
-                </a>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll">
-                        <li class="nav-item">
-                            <a class="nav-link {{ (request()->is('home*')) ? 'active' : '' }}" aria-current="page" href="{{ route('home') }}">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link {{ (request()->is('about*')) ? 'active' : '' }}" 
-                                href="{{ route('about') }}">My Intro</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link {{ (request()->is('service*')) ? 'active' : '' }}" 
-                                href="{{ route('service') }}">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link {{ (request()->is('contact*')) ? 'active' : '' }}" 
-                                href="{{ route('contact') }}">Contact</a>
-                        </li>
+            <div class="logo">
+                <a href="index.html"><img src="{{ asset('frontTheme/images/logo.png') }}" class="img-responsive" alt=""></a>
+            </div>
+            <div class="head-nav">
+                <span class="menu"> 
+                    <ul class="cl-effect-1">
+                        <li class="{{ (request()->is('home*')) ? 'active' : '' }}"><a href="{{ route('home') }}">Home</a></li>
+                        <li class="{{ (request()->is('about*')) ? 'active' : '' }}"><a href="{{ route('about') }}">About Us</a></li>
+                        <li class="{{ (request()->is('service*')) ? 'active' : '' }}"><a href="{{ route('service') }}">Services</a></li>
+                        <li class="{{ (request()->is('blogs*')) ? 'active' : '' }}"><a href="{{ route('blogs') }}">Blog</a></li>
+                        <li class="{{ (request()->is('shortcodes*')) ? 'active' : '' }}"><a href="{{ route('shortcodes') }}">Shortcodes</a></li>
+                        <li class="{{ (request()->is('login*')) ? 'active' : '' }}"><a href={{ route('login') }}>Login</a></li>
+                        <li class="{{ (request()->is('contact*')) ? 'active' : '' }}"><a href={{ route('contact') }}>Contact</a></li>
+                        <div class="clearfix"></div>
                     </ul>
-                    <form action="#search" method="GET" class="d-flex search-header">
-                        <input class="form-control" type="search" placeholder="Enter Keyword..." aria-label="Search"
-                            required>
-                        <button class="btn btn-style" type="submit">Search</button>
-                    </form>
-                </div>
-                <!-- toggle switch for light and dark theme -->
-                <div class="cont-ser-position">
-                    <nav class="navigation">
-                        <div class="theme-switch-wrapper">
-                            <label class="theme-switch" for="checkbox">
-                                <input type="checkbox" id="checkbox">
-                                <div class="mode-container">
-                                    <i class="gg-sun"></i>
-                                    <i class="gg-moon"></i>
-                                </div>
-                            </label>
-                        </div>
-                    </nav>
-                </div>
-                <!-- //toggle switch for light and dark theme -->
-            </nav>
+                </span>
+            </div>
+            <!-- script-for-nav -->
+            <script>
+                $( "span.menu" ).click(function() {
+                $( ".head-nav ul" ).slideToggle(300, function() {
+                // Animation complete.
+                });
+                });
+            </script>
+                <!-- script-for-nav -->
+                
+                        
+            
+                    <div class="clearfix"> </div>
         </div>
-    </header>
+    </div>

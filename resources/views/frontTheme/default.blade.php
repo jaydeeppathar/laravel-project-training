@@ -1,29 +1,24 @@
-
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE HTML>
+<html>
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Biodata - Personal Category Bootstrap Responsive Web Template - Home : W3Layouts</title>
-    <!-- google font -->
-    @include('frontTheme.stayle')
+<title>Voguish a Blogging Category Flat Bootstarp Responsive Website Template | Home :: w3layouts</title>
+<link href="{{ asset('frontTheme/css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all">
+<link href="{{ asset('frontTheme/css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Voguish Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+
+@include('frontTheme.stayle')    
 </head>
-
-<body>
-    <!-- header -->
-    @include('frontTheme.header')
-    <!-- //header -->
-
+<body class="font">
+<!-- header -->
+   @include('frontTheme.header')
+<!-- header -->
     @yield('content')
 
-    <!-- footer -->
+    {{-- footer --}}
     @include('frontTheme.footer')
-    <!-- //footer -->
+    {{-- footer --}} 
 
-    <!-- Js scripts -->
-    @include('frontTheme.script')
-</body>
-
-</html>
+    @include('frontTheme.script') </body> </html>
